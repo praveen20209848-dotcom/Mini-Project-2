@@ -1,6 +1,5 @@
-import React from 'react';
 import { Server, Activity, AlertTriangle, Cpu } from 'lucide-react';
-import { Card, CardContent, CardHeader, Badge } from '../components/ui';
+import { Card, CardHeader, Badge } from '../components/ui';
 import { deviceData } from '../data/mockData';
 
 export default function Devices() {

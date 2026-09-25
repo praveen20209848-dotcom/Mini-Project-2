@@ -1,5 +1,4 @@
-import React from 'react';
-import { FileText, Download, Printer } from 'lucide-react';
+import { Download, Printer } from 'lucide-react';
 import { Card, CardContent, CardHeader } from '../components/ui';
 import { systemStats } from '../data/mockData';
 

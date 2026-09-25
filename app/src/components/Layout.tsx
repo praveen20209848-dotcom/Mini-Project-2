@@ -1,9 +1,11 @@
-import React from 'react';
+
 import { NavLink, Outlet } from 'react-router-dom';
 import { ShieldAlert, LayoutDashboard, Search, FileText, Server, PieChart, Settings, Bell, User, Activity } from 'lucide-react';
 import { cn } from '../lib/utils';
+import { useAnalysis } from '../context/AnalysisContext';
 
 export default function Layout() {
+  const { lastAnalysisTime, analysis } = useAnalysis();
   const navItems = [
     { name: 'Dashboard', path: '/', icon: LayoutDashboard },
     { name: 'Log Analyzer', path: '/analyzer', icon: Search },
@@ -53,7 +55,7 @@ export default function Layout() {
             <span className="text-sm font-medium">System Secure</span>
           </div>
           <div className="mt-3 text-xs text-muted text-center">
-            Monitoring 42 Industrial Assets
+            Monitoring {analysis ? analysis.stats.devicesMonitored : 42} Industrial Assets
           </div>
         </div>
       </aside>
@@ -71,7 +73,7 @@ export default function Layout() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-success opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-success"></span>
               </span>
-              Last log analysis: 2 minutes ago
+              Last log analysis: {lastAnalysisTime}
             </div>
           </div>
           <div className="flex items-center gap-6">

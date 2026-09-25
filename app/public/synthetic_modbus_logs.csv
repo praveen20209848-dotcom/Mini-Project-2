@@ -1,0 +1,12 @@
+timestamp,source_ip,destination_ip,protocol,device_id,function_code,operating_speed_rpm,event_type,severity,status
+10:45:12,198.51.100.45,192.168.10.22,Modbus TCP,PLC-002,99 Override,2350,Brute Force,High,Detected
+10:44:02,203.0.113.88,192.168.10.10,Modbus TCP,SCADA-01,06 Write Reg,1200,Unauthorized Access,Critical,Investigating
+10:42:15,192.168.20.88,192.168.20.14,Modbus TCP,CNC-014,16 Write Multi,1850,Port Scanning,Medium,Detected
+10:40:00,45.33.32.156,192.168.1.50,Modbus TCP,SRV-01,08 Diagnostics,1200,Malware Activity,Critical,Investigating
+10:38:22,192.168.10.25,192.168.10.25,Modbus TCP,HMI-05,03 Read Reg,1350,Abnormal Activity,Low,Resolved
+10:35:10,172.16.0.12,172.16.5.11,Modbus TCP,RTU-11,06 Write Reg,1900,Denial of Service,High,Detected
+10:30:00,192.168.10.21,192.168.10.20,Modbus TCP,PLC-001,03 Read Reg,1150,Normal Activity,Low,Resolved
+10:28:15,192.168.10.22,192.168.10.20,Modbus TCP,PLC-002,03 Read Reg,1220,Normal Activity,Low,Resolved
+10:25:40,192.168.10.10,192.168.10.20,Modbus TCP,SCADA-01,03 Read Reg,1180,Normal Activity,Low,Resolved
+10:20:10,192.168.20.14,192.168.20.20,Modbus TCP,CNC-014,03 Read Reg,1250,Normal Activity,Low,Resolved
+10:15:30,192.168.1.50,192.168.1.20,Modbus TCP,SRV-01,03 Read Reg,1200,Normal Activity,Low,Resolved
